@@ -1,6 +1,6 @@
-# Este script contiene errores comunes que violan las normas PEP 8
-
+"Operaciones basicas"
 class OperacionesBasicas:
+    "Class"
     def __init__(self ):
         self.resultado=0
 
@@ -13,19 +13,28 @@ class OperacionesBasicas:
         self.resultado=a-b
 
     def obtener_resultado(self):
+        """Esta funcion obtiene el resultado"""
         return self.resultado
 
 
 class CalculadoraPromedio:
+    """Clasess"""
     def __init__( self, valores ):
+        """Constructore"""
         self.valores=valores
 
     def calcular_promedio(self):
+        """Calcula el promedio"""
         suma=0
         for valor in self.valores:
             suma+=valor
         promedio=suma/len(self.valores)
         return promedio
+
+    def resultado (self):
+        """Calcula el promedio"""
+        r="Resultado"
+        return r
 
 
 # Variables globales
@@ -45,5 +54,5 @@ if __name__ == "__main__":
 
     # Usar la clase CalculadoraPromedio
     calculadora_promedio = CalculadoraPromedio(NUMEROS)
-    promedio=calculadora_promedio.calcular_promedio()
-    print(f"El promedio de los números es: {promedio}")
+    promedios=calculadora_promedio.calcular_promedio()
+    print(f"El promedio de los números es: {promedios}")
